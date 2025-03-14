@@ -1,0 +1,27 @@
+section.main-section
+  include ../components/header.pug
+  .wrapper
+    .main-section__container
+      h1.main-section__title.font-w-semi-bold.font-s-48.text-up
+        | Зарабатывайте 
+        br.no-br
+        span.color-violet.font-w-extra-bold от 263 000 ₽ 
+        | ежемесячно
+      .main-section__sub-title.font-w-regular.font-s-32
+        | на продаже популярных 
+        br
+        | телефонов и аксессуаров
+      .main-section__bottom
+        .font-w-semi-bold.font-s-20
+          | Узнайте, как стать партнером 
+          br
+          | франшизы 
+          span.color-violet «ONE SERVICE»
+        form.main-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Узнать
+          .main-section__agree-wrapper
+            include ../components/agree.pug
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="729" height="575" alt="image")

@@ -1,0 +1,54 @@
+section.steps-section
+  .wrapper
+    .steps-section__container
+      img.steps-section__img(src="images/steps-section-img.jpg" loading="lazy" width="315" height="239" alt="image")
+      h2.steps-section__title.font-s-40.text-up
+        | Сделайте 
+        br.no-br
+        span.color-violet 8 простых шагов 
+        br.no-br
+        | до первых продаж
+      .swiper-bullet
+        .steps-section__cards.swiper-wrapper
+          .steps-section__card.swiper-slide
+            img.steps-section__icon(src="images/steps-section-icon.svg" loading="lazy" width="27" height="24" alt="icon")
+            .font-s-24-a.color-violet.text-up 1 шаг
+            .font-w-medium.font-s-16-a Заключение <br> партнерского договора
+          .steps-section__card.swiper-slide
+            img.steps-section__icon(src="images/steps-section-icon.svg" loading="lazy" width="27" height="24" alt="icon")
+            .font-s-24-a.color-violet.text-up 2 шаг
+            .font-w-medium.font-s-16-a Создание и согласование <br> дизайн-проекта
+          .steps-section__card.swiper-slide.steps-section__card-3
+            img.steps-section__icon(src="images/steps-section-icon.svg" loading="lazy" width="27" height="24" alt="icon")
+            .font-s-24-a.color-violet.text-up 3 шаг
+            .font-w-medium.font-s-16-a Аренда помещения <br> и ремонт
+          .steps-section__card.swiper-slide
+            img.steps-section__icon(src="images/steps-section-icon.svg" loading="lazy" width="27" height="24" alt="icon")
+            .font-s-24-a.color-violet.text-up 4 шаг
+            .font-w-medium.font-s-16-a Поиск и обучение <br> персонала
+          .steps-section__card.swiper-slide
+            img.steps-section__icon(src="images/steps-section-icon.svg" loading="lazy" width="27" height="24" alt="icon")
+            .font-s-24-a.color-violet.text-up 5 шаг
+            .font-w-medium.font-s-16-a Доставка и монтаж <br> оборудования и мебели
+          .steps-section__card.swiper-slide
+            img.steps-section__icon(src="images/steps-section-icon.svg" loading="lazy" width="27" height="24" alt="icon")
+            .font-s-24-a.color-violet.text-up 6 шаг
+            .font-w-medium.font-s-16-a Формирование первичных <br> запасов товара
+          .steps-section__card.swiper-slide
+            img.steps-section__icon(src="images/steps-section-icon.svg" loading="lazy" width="27" height="24" alt="icon")
+            .font-s-24-a.color-violet.text-up 7 шаг
+            .font-w-medium.font-s-16-a Реклама
+          .steps-section__card.swiper-slide
+            img.steps-section__icon(src="images/steps-section-icon.svg" loading="lazy" width="27" height="24" alt="icon")
+            .font-s-24-a.color-violet.text-up 8 шаг
+            .steps-section__card-text.font-w-medium.font-s-16-a Открытие магазина, <br> старт работы
+        .bullet-pagination
+      .steps-section__bottom
+        .font-w-semi-bold.font-s-20 Получите подробный план открытия в 1 клик
+        form.steps-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Получить
+        .steps-section__agree-wrapper
+          include ../components/agree.pug

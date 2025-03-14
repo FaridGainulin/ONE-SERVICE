@@ -1,0 +1,30 @@
+section.location-section
+  .wrapper
+    .location-section__container
+      img.location-section__icon(src="images/location-section-icon.svg" loading="lazy" width="118" height="180" alt="icon")
+      h2.location-section__title.font-s-40.text-up
+        span.color-violet Узнайте, 
+        | где лучше всего открыть 
+        br.no-br
+        | магазин в вашем городе
+      .location-section__sub-title.font-s-24 Подбор локации — один из важных факторов успеха!
+      .location-section__text.font-w-regular.font-s-24
+        | Поэтому 
+        span.color-violet мы помогаем 
+        | нашим партнерам выбрать 
+        br.no-br
+        | лучшее место для бизнеса
+      .location-section__bottom
+        .location-section__bottom-text.font-s-24
+          | Укажите название города 
+          br.no-br
+          | и мы подготовим список удачных локаций
+        form.location-section__form(data-city-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          .input.js-input-city.location-item
+            input.input.location-item.input-city-position(type="text" name="city" autocomplete="off" placeholder="Название города")
+            .input__progress.js-input-city-progress
+              span.js-input-city-percent 0%
+          button.btn.location-item(type="submit") Получить список локаций
+        .location-section__agree-wrapper
+          include ../components/agree.pug

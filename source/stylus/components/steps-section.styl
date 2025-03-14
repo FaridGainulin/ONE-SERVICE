@@ -1,0 +1,185 @@
+.steps-section
+  background: linear-gradient(180deg, #080200 0%, #000 100%);
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding 60px 0
+    +above($breakpoints.md)
+      padding 80px 0
+    +above($breakpoints.xxl)
+      padding 120px 0 118px
+    &:after
+      content: ""
+      position: absolute
+      z-index -2
+      background-color $color-violet
+      filter: blur(20px);
+      border-radius: 100%;
+      transform: rotate(36deg);
+      width: 5%;
+      height: 55%;
+      bottom: 105px;
+      left: 3px;
+      +above($breakpoints.sm)
+        filter: blur(30px);
+        left: -4px;
+        bottom: 67px;
+      +above($breakpoints.md)
+        left: 9px;
+        bottom: 81px;
+      +above($breakpoints.xxl)
+        left: 27px;
+        bottom: 121px;
+
+  &__img
+    position: absolute
+    z-index -1
+    width: 90px;
+    height: auto;
+    top: 22px;
+    right: -67px;
+    +above($breakpoints.sm)
+      width: 196px;
+      top: 56px;
+      right: 0;
+    +above($breakpoints.md)
+      width: 260px;
+      top: 105px;
+    +above($breakpoints.xxl)
+      width 315px
+      top: 146px
+
+  &__title
+    color: $color-white-text
+    padding-bottom 15px
+    +above($breakpoints.sm)
+      padding-bottom 30px
+    +above($breakpoints.md)
+      padding-bottom 60px
+    +above($breakpoints.xxl)
+      padding-bottom 80px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      justify-content flex-end
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__card
+    position relative
+    background-color #1C1C1C
+    box-shadow: 2px 2px 0 0 $color-violet
+    width 280px !important
+    height: 100px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    padding 20px 10px
+    +above($breakpoints.sm)
+      box-shadow: 3px 3px 0 0 $color-violet
+      align-items: flex-start
+      width: 174px !important;
+      height: 100px
+      gap: 20px;
+      padding 15px 5px 5px 15px
+    +above($breakpoints.md)
+      box-shadow: 4px 4px 0 0 $color-violet
+      width: 230px !important;
+      height: 130px
+      gap: 25px;
+      padding 20px 5px 5px 20px
+    +above($breakpoints.xxl)
+      width 280px !important
+      height: 165px
+      gap: 28px
+      padding 26px 5px 5px 26px
+
+  &__card-3
+    +above($breakpoints.sm)
+      margin-right 184px
+    +above($breakpoints.md)
+      margin-right 245px
+    +above($breakpoints.xxl)
+      margin-right 300px
+
+  &__icon
+    position: absolute
+    width: 25px;
+    height: 22px;
+    top: 16px;
+    right: 16px;
+    +above($breakpoints.sm)
+      width: 18px;
+      height: 16px;
+      top: 14px;
+      right: 13px;
+    +above($breakpoints.md)
+      width: 24px;
+      height: 22px;
+      top: 17px;
+      right: 16px;
+    +above($breakpoints.xxl)
+      width 27px
+      height: 24px
+      top: 26px
+      right: 24px
+
+  &__card-text
+    color: $color-white-text
+    -webkit-text-stroke: 0.5px $color-violet
+
+  &__bottom
+    position relative
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    +above($breakpoints.sm)
+      width max-content
+      align-items: flex-start
+      margin-top -90px
+    +above($breakpoints.md)
+      margin-top -120px
+    +above($breakpoints.xxl)
+      margin-top -136px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    margin 15px 0 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      gap: 6px
+    +above($breakpoints.md)
+      gap: 7px
+      margin 20px 0 12px
+    +above($breakpoints.xxl)
+      gap: 10px
+      margin 24px 0 15px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 170px !important
+      +above($breakpoints.md)
+        width 230px !important
+      +above($breakpoints.xxl)
+        width 274px !important
+
+  &__agree-wrapper
+    +above($breakpoints.sm)
+      width 100%
+      display: flex
+      justify-content flex-end

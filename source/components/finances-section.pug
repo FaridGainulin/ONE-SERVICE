@@ -1,0 +1,35 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      .finances-section__block
+        h2.finances-section__title.font-s-40.text-up Франшиза в цифрах
+        .swiper-bullet
+          .finances-section__cards.swiper-wrapper
+            .finances-section__card.swiper-slide
+              .font-w-semi-bold.font-s-28-a.color-violet.text-up 4 053 000 ₽
+              .font-w-medium.font-s-16 ежемесячная <br> выручка
+            .finances-section__card.swiper-slide
+              .font-w-semi-bold.font-s-28-a.color-violet.text-up с 1-го месяца
+              .font-w-medium.font-s-16 вы начнете <br> зарабатывать
+            .finances-section__card.swiper-slide
+              .font-w-semi-bold.font-s-28-a.color-violet.text-up 263 000 ₽
+              .font-w-medium.font-s-16 ежемесячная <br> чистая прибыль
+            .finances-section__card.swiper-slide
+              .font-w-semi-bold.font-s-28-a.color-violet.text-up 2 месяца
+              .font-w-medium.font-s-16 для запуска <br> всех процессов
+            .finances-section__card.swiper-slide
+              .font-w-semi-bold.font-s-28-a.color-violet.text-up от 75 000 ₽
+              .font-w-medium.font-s-16 средний чек <br> одного клиента
+            .finances-section__card.swiper-slide
+              .font-w-semi-bold.font-s-28-a.color-violet.text-up 6,5%
+              .font-w-medium.font-s-16 рентабельность <br> по чистой прибыли
+          .bullet-pagination
+      .finances-section__bottom
+        .font-w-semi-bold.font-s-20 Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug
