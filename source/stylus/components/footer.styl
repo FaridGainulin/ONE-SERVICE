@@ -8,11 +8,7 @@
     padding-bottom 14px
     +above($breakpoints.sm)
       flex-direction: row
-      gap: 15px
-    +above($breakpoints.md)
-      gap: 50px
-    +above($breakpoints.xxl)
-      gap: 95px
+      justify-content space-between
 
   &__brand-block
     +above($breakpoints.sm)
@@ -52,12 +48,8 @@
     cursor pointer
     text-decoration: underline
     +above($breakpoints.sm)
-      margin-top 19px
+      margin 19px 0 0 0
     +above($breakpoints.md)
-      margin-top 21px
+      margin 21px 110px 0 0
     +above($breakpoints.xxl)
-      margin-top 25px
-
-  &__call-me
-    +above($breakpoints.sm)
-      display: none
+      margin 25px 120px 0 0
